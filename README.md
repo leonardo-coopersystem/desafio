@@ -7,7 +7,7 @@ Serão avaliados:
 * Navegação entre telas  
 * Validação de formulários conforme regras de negócios  
 * Padrões de codificação  
-* Testes unitários
+* Testes unitários com karma/jasmine (Pode enviar o desafio sem os testes, e realizar um commit com os testes posteriormente) 
 	
  
 **Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência. (Ex.: Bootstrap)
@@ -21,7 +21,7 @@ Serão avaliados:
   
 ### Fluxo de navegação  
 * Lista de investimentos  
-	* Executar uma chamada get no endereço [https://run.mocky.io/v3/7b2dfe42-37a3-4094-b7ce-8ee4f8012f30](https://run.mocky.io/v3/7b2dfe42-37a3-4094-b7ce-8ee4f8012f30)
+	* Executar uma chamada get no endereço [https://run.mocky.io/v3/ca4ec77d-b941-4477-8a7f-95d4daf7a653](https://run.mocky.io/v3/ca4ec77d-b941-4477-8a7f-95d4daf7a653)
 	* Montar a  tela conforme o protótipo fazendo a integração com a resposta da execução do serviço acima.
 	* Ao clicar em um plano que  não está em carência (indicadorCarencia = 'N'), navegar para próxima tela. 
 *  Resgate personalizado  
