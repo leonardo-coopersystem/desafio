@@ -13,10 +13,10 @@ Serão avaliados:
 **Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência. (Ex.: Bootstrap)
   
 ### Protótipos   
-[01 - Lista de investimentos](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png)   
-[02 - Resgate personalizado](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/02%20-%20Resgate.png)   
-[03 - Modal de confirmação](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/03%20-%20Modal%20sucesso.png)   
-[04 - Modal de erro](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/04%20-%20Modal%20erro.png)   
+[01 - Lista de investimentos](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png)   
+[02 - Resgate personalizado](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/02%20-%20Resgate.png)   
+[03 - Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/03%20-%20Modal%20sucesso.png)   
+[04 - Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/04%20-%20Modal%20erro.png)   
   
   
 ### Fluxo de navegação  
@@ -71,7 +71,7 @@ Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
 
 - Clicar em confirmar
 
-- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/03%20-%20Modal%20sucesso.png)
+- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/03%20-%20Modal%20sucesso.png)
 
 
 ### Entrega
