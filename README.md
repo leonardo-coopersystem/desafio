@@ -13,10 +13,10 @@ Serão avaliados:
 **Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência. (Ex.: Bootstrap)
   
 ### Protótipos   
-[01 - Lista de investimentos](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png)   
-[02 - Resgate personalizado](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/02%20-%20Resgate.png)   
-[03 - Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/03%20-%20Modal%20sucesso.png)   
-[04 - Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/04%20-%20Modal%20erro.png)   
+[01 - Lista de investimentos](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png?raw=true)   
+[02 - Resgate personalizado](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/02%20-%20Resgate.png?raw=true)   
+[03 - Modal de confirmação](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/03%20-%20Modal%20sucesso.png?raw=true)   
+[04 - Modal de erro](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/04%20-%20Modal%20erro.png?raw=true)   
   
   
 ### Fluxo de navegação  
@@ -49,6 +49,7 @@ Serão avaliados:
 - Digitar um valor acima do disponível na primeira ação.
 
 Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 12 mil no campo valor a resgatar
+
 - Digitar um valor abaixo do disponível na segunda ação.
 
 Ex: VALE3 tem 8 mil de saldo acumulado, digitar 9 mil no campo valor a resgatar
@@ -56,22 +57,21 @@ Ex: VALE3 tem 8 mil de saldo acumulado, digitar 9 mil no campo valor a resgatar
 - Clicar em confirmar
 
 - **Resultado esperado:** Deve aparecer um modal alertando que foi digitado um ou mais valor acima do permitido, e exibir quais
-ações estão com erro. [Ex: Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/04%20-%20Modal%20erro.png)   
+ações estão com erro. [Ex: Modal de erro](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/04%20-%20Modal%20erro.png?raw=true)   
 
 
 #### 02 - Clicar em confirmar com todos os campos com valor validos
 - Clicar no investimento I
-- Digitar um valor abaixo ou igual ao disponível na primeira ação.
+- Digitar um valor abaixo ou igual ao disponível na primeira e segunda ação.
 
 Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 11 mil no campo valor a resgatar
-
-- Digitar um valor abaixo ou igual ao disponível na segunda ação.
-
 Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
+
+- Digitar um valor abaixo ou igual ao disponível na terceira ação.
 
 - Clicar em confirmar
 
-- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/03%20-%20Modal%20sucesso.png)
+- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de confirmação](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/03%20-%20Modal%20sucesso.png?raw=true)
 
 
 ### Entrega
