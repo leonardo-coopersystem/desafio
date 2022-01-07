@@ -1,6 +1,6 @@
-# Projeto de seleção Coopersystem (Angular 11+)
+# Projeto de seleção Coopersystem (Angular 12+)
   
-O teste consiste em criar uma mini aplicação em angular 11+ que simula um resgate personalizado de fundos de investimentos em ações.  
+O teste consiste em criar uma mini aplicação em angular 12+ que simula um resgate personalizado de fundos de investimentos em ações.  
   
 Serão avaliados:  
 * Integração com api rest
@@ -13,10 +13,10 @@ Serão avaliados:
 **Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência. (Ex.: Bootstrap)
   
 ### Protótipos   
-[01 - Lista de investimentos](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png)   
-[02 - Resgate personalizado](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/02%20-%20Resgate.png)   
-[03 - Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/03%20-%20Modal%20sucesso.png)   
-[04 - Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/04%20-%20Modal%20erro.png)   
+[01 - Lista de investimentos](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/01%20-%20Lista%20de%20investimentos.png)   
+[02 - Resgate personalizado](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/02%20-%20Resgate.png)   
+[03 - Modal de confirmação](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/03%20-%20Modal%20sucesso.png)   
+[04 - Modal de erro](https://raw.githubusercontent.com/desafio/avaliacao-coopersystem/master/prototipos-web/04%20-%20Modal%20erro.png)   
   
   
 ### Fluxo de navegação  
@@ -39,40 +39,31 @@ Serão avaliados:
 	* Valor a resgatar de cada ação não pode ser maior que saldo acumulado da mesma, deve ser exibido um alerta abaixo do input quando isso acontecer. 
 	Ex (O valor a resgatar não pode ser maior que R$ 2.614,13) 
 	* A cada interação nos inputs, deve ser atualizado o campo valor total do resgate.  
-	* Colocar mascaras de moeda nos inputs de valor a resgatar, para não permitir a digitação de letras
-	* Formatar campos de saldos. Ex (R$ 2.614,13)
+	* Colocar mascaras de moeda nos inputs de valor a resgatar, para não permitir a digitação de letras e formatar campos de saldos. Ex (R$ 2.614,13)
 
+	
 ### Cenário de teste
 
-#### 01 - Clicar em confirmar sem preencher nenhum campo
-- Clicar no investimento I
-- Clicar em confirmar sem preencher nenhum valor
-- **Resultado esperado:** Deve aparecer um modal pedido para o cliente preencher pelo menos um dos campos de valor a resgatar.
-
-
-#### 02 - Clicar em confirmar com um dos campos a resgatar com valor invalido
+#### 01 - Clicar em confirmar com mais de um campos a resgatar com valor invalido
 - Clicar no investimento I
 - Digitar um valor acima do disponível na primeira ação.
 
-Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 15 mil no campo valor a resgatar
-
-
+Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 12 mil no campo valor a resgatar
 - Digitar um valor abaixo do disponível na segunda ação.
 
-Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
+Ex: VALE3 tem 8 mil de saldo acumulado, digitar 9 mil no campo valor a resgatar
 
 - Clicar em confirmar
 
 - **Resultado esperado:** Deve aparecer um modal alertando que foi digitado um ou mais valor acima do permitido, e exibir quais
-ações estão com erro. [Ex: Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-web/04%20-%20Modal%20erro.png)   
+ações estão com erro. [Ex: Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/desafio/master/prototipos-web/04%20-%20Modal%20erro.png)   
 
 
-#### 03 - Clicar em confirmar com todos os campos com valor validos
+#### 02 - Clicar em confirmar com todos os campos com valor validos
 - Clicar no investimento I
 - Digitar um valor abaixo ou igual ao disponível na primeira ação.
 
 Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 11 mil no campo valor a resgatar
-
 
 - Digitar um valor abaixo ou igual ao disponível na segunda ação.
 
