@@ -71,7 +71,7 @@ Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
 
 - Clicar em confirmar
 
-- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de confirmação](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/03%20-%20Modal%20sucesso.png?raw=true)
+- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de sucesso](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-web/03%20-%20Modal%20sucesso.png?raw=true)
 
 
 ### Entrega
@@ -85,7 +85,7 @@ leonardo.guedes@coopersystem.com.br
 
 Caso o link do json não estiver disponível, pode usar este site para criar um novo endpoint
 
-[https://www.mocky.io/](https://www.mocky.io/)
+[https://www.mocky.io/](https://designer.mocky.io/)
 
     {
 		"response": {
