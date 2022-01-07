@@ -7,21 +7,21 @@ Serão avaliados:
 * Navegação entre telas  
 * Validação de formulários conforme regras de negócios  
 * Padrões de codificação  
-* Testes unitários
+* Testes unitários com karma/jasmine (Pode enviar o desafio sem os testes, e realizar um commit com os testes posteriormente) 
 	
  
-**Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência. (Ex.: Bootstrap)
+**Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência.
   
 ### Protótipos   
-[01 - Lista de investimentos](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/1%20-%20Lista%20de%20investimentos.png)   
-[02 - Resgate personalizado](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/2%20-%20Simula%C3%A7%C3%A3o%20do%20resgate.png)   
-[03 - Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/3%20-%20Confirma%C3%A7%C3%A3o.png)   
-[04 - Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/4%20-%20Erro.png)   
+[01 - Lista de investimentos](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/1%20-%20Lista%20de%20investimentos.png?raw=true)   
+[02 - Resgate personalizado](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/2%20-%20Simula%C3%A7%C3%A3o%20do%20resgate.png?raw=true)   
+[03 - Modal de confirmação](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/3%20-%20Confirma%C3%A7%C3%A3o.png?raw=true)   
+[04 - Modal de erro](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/4%20-%20Erro.png?raw=true)   
   
   
 ### Fluxo de navegação  
 * Lista de investimentos  
-	* Executar uma chamada get no endereço [https://run.mocky.io/v3/7b2dfe42-37a3-4094-b7ce-8ee4f8012f30](https://run.mocky.io/v3/7b2dfe42-37a3-4094-b7ce-8ee4f8012f30)
+	* Executar uma chamada get no endereço [https://run.mocky.io/v3/ca4ec77d-b941-4477-8a7f-95d4daf7a653](https://run.mocky.io/v3/ca4ec77d-b941-4477-8a7f-95d4daf7a653)
 	* Montar a  tela conforme o protótipo fazendo a integração com a resposta da execução do serviço acima.
 	* Ao clicar em um plano que  não está em carência (indicadorCarencia = 'N'), navegar para próxima tela. 
 *  Resgate personalizado  
@@ -38,49 +38,40 @@ Serão avaliados:
 	* Realizar o cálculo do saldo da ação usando o campo percentual, que e o percentual que essa ação representa no valor total do investimento.
 	* Valor a resgatar de cada ação não pode ser maior que saldo acumulado da mesma, deve ser exibido um alerta abaixo do input quando isso acontecer. 
 	Ex (O valor a resgatar não pode ser maior que R$ 2.614,13) 
-	* A cada interação nos inputs, deve ser atualizado o campo valor total a resgatar.  
-	* Colocar mascaras de moeda nos inputs de valor a resgatar, para não permitir a digitação de letras
-	* Formatar campos de saldos. Ex (R$ 2.614,13)
+	* A cada interação nos inputs, deve ser atualizado o campo valor total do resgate.  
+	* Colocar mascaras de moeda nos inputs de valor a resgatar, para não permitir a digitação de letras e formatar campos de saldos. Ex (R$ 2.614,13)
 
+	
 ### Cenário de teste
 
-#### 01 - Clicar em confirmar sem preencher nenhum campo
-- Clicar no investimento I
-- Clicar em confirmar sem preencher nenhum valor
-- **Resultado esperado:** Deve aparecer um modal pedido para o cliente preencher pelo menos um dos campos de valor a resgatar.
-
-
-#### 02 - Clicar em confirmar com um dos campos a resgatar com valor invalido
+#### 01 - Clicar em confirmar com mais de um campos a resgatar com valor invalido
 - Clicar no investimento I
 - Digitar um valor acima do disponível na primeira ação.
 
-Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 15 mil no campo valor a resgatar
-
+Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 12 mil no campo valor a resgatar
 
 - Digitar um valor abaixo do disponível na segunda ação.
 
-Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
+Ex: VALE3 tem 8 mil de saldo acumulado, digitar 9 mil no campo valor a resgatar
 
 - Clicar em confirmar
 
 - **Resultado esperado:** Deve aparecer um modal alertando que foi digitado um ou mais valor acima do permitido, e exibir quais
-ações estão com erro. [Ex: Modal de erro](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/4%20-%20Erro.png)   
+ações estão com erro. [Ex: Modal de erro](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/4%20-%20Erro.png?raw=true)   
 
 
-#### 03 - Clicar em confirmar com todos os campos com valor validos
+#### 02 - Clicar em confirmar com todos os campos com valor validos
 - Clicar no investimento I
-- Digitar um valor abaixo ou igual ao disponível na primeira ação.
+- Digitar um valor abaixo ou igual ao disponível na primeira e segunda ação.
 
 Ex: BBAS3 tem 11 mil de saldo acumulado, digitar 11 mil no campo valor a resgatar
-
-
-- Digitar um valor abaixo ou igual ao disponível na segunda ação.
-
 Ex: VALE3 tem 8 mil de saldo acumulado, digitar 2 mil no campo valor a resgatar
+
+- Digitar um valor abaixo ou igual ao disponível na terceira ação.
 
 - Clicar em confirmar
 
-- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial [Ex: Modal de confirmação](https://raw.githubusercontent.com/leonardo-coopersystem/avaliacao-coopersystem/master/prototipos-react-native/3%20-%20Confirma%C3%A7%C3%A3o.png)
+- **Resultado esperado:** Deve aparecer um modal com a mensagem que o resgate foi efetuado com sucesso, e quando clicar em novo resgate, voltar para tela inicial. [Ex Modal de sucesso](https://github.com/leonardo-coopersystem/desafio/blob/master/prototipos-react-native/3%20-%20Confirma%C3%A7%C3%A3o.png?raw=true)
 
 
 ### Entrega
@@ -94,7 +85,7 @@ leonardo.guedes@coopersystem.com.br
 
 Caso o link do json não estiver disponível, pode usar este site para criar um novo endpoint
 
-[https://www.mocky.io/](https://www.mocky.io/)
+[https://www.mocky.io/](https://designer.mocky.io/)
 
     {
 		"response": {
