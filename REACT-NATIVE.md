@@ -7,7 +7,7 @@ Serão avaliados:
 * Navegação entre telas  
 * Validação de formulários conforme regras de negócios  
 * Padrões de codificação  
-* Testes unitários com karma/jasmine (Pode enviar o desafio sem os testes, e realizar um commit com os testes posteriormente) 
+* Testes unitários com jest (Pode enviar o desafio sem os testes, e realizar um commit com os testes posteriormente) 
 	
  
 **Obs.:** Os layouts dos protótipos são só ilustrativos, podem usar os frameworks de estilo de sua preferência.
